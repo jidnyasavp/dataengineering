@@ -1,0 +1,38 @@
+git clone url
+git status
+git checkout -b newbranchname
+git add .
+git commit -m "Add your comment"
+# for the first time it will ask for global configuration
+git config --global user.email "EmailID"
+git config --global user.Name "Name"
+# It wil ask for login for the first time
+git commit -m "add your project related message"
+git push origin branchname  #which branch is created above
+
+
+# Raise a pull request click on the url created.
+# add a reviewer
+# Comment properly about the task you did.
+# If Jira id is give for the task add the jira id while raising the pull request.
+
+#send message to reviewer that a pull request has been submitted.
+# if all goes well it will be merged to main, if not there will be review comments give by the reviewer.
+# resolve the review comments and repeat the above complete process only new branch step will not be done.
+
+# Raise PR and get it verified and merged.
+
+# now come to main branch on local
+
+git checkout main
+
+# pull all the commits done on main branch
+git pull origin main
+
+#If you want to check history of commits done
+
+git log
+
+# and want to know about other commands 
+
+git help
